@@ -1,8 +1,7 @@
-var webpackCongig = require("./webpack.config.js");
+var webpackConfig = require("./webpack.config.js");
 
 module.exports = function(config) {
     config.set({
-        plugons: require("karma-phantomjs-launcher"),
         browsers: ["PhantomJS"], // Use 'Chrome' in localhost:3000
         singleRun: true,
         frameworks: ["mocha"],
@@ -20,7 +19,7 @@ module.exports = function(config) {
                 timeout: "5000"
             }
         },
-        webpack: webpackCongig,
+        webpack: webpackConfig,
         webpackServer: {
             noInfo: true
         }
