@@ -2,7 +2,7 @@ var express = require("express");
 
 // Create the app
 var app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // This redirects any websites using https to use http
 app.use(function(req, res, next) {

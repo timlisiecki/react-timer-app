@@ -2,7 +2,7 @@ var webpackConfig = require("./webpack.config.js");
 
 module.exports = function(config) {
     config.set({
-        browsers: ["PhantomJS"], // Use 'Chrome' in localhost:3000
+        browsers: ["Chrome"], // Use 'Chrome' in localhost:3000; use PhantomJS in Cloud9
         singleRun: true,
         frameworks: ["mocha"],
         files: [
